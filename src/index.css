@@ -593,6 +593,14 @@ span {
     margin: 3rem 0;
   }
 
+  .logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: bold;
+    position: absolute;
+    padding-left: 8%;
+  }
+
   .btn {
     margin-bottom: 15px;
   }
