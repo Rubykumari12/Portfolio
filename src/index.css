@@ -429,8 +429,8 @@ span {
 }
 
 .education-box .edu-head img {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 10px;
 }
 
@@ -441,7 +441,7 @@ span {
 }
 
 .education-box .edu-head .edu h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .education-box .edu-head .edu h2 {
@@ -454,17 +454,13 @@ span {
 }
 
 .education-box h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .contact {
   padding-top: 7%;
   background: var(--second-bg-color);
 }
-
-/* .input-box {
-  padding-bottom: 5rem;
-} */
 
 .contact h2 {
   margin-bottom: 3rem;
@@ -660,7 +656,8 @@ span {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 18% 10%;
+    /* padding: 18% 10%; */
+    padding: 6% 4%;
   }
 
   .skills p {
@@ -669,7 +666,8 @@ span {
   }
 
   .projects {
-    padding: 18% 10%;
+    /* padding: 18% 10%; */
+    padding: 4%;
   }
 
   .projects h2 {
@@ -678,6 +676,7 @@ span {
 
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
+    padding: 0;
   }
 
   .projects-box img {
@@ -685,7 +684,8 @@ span {
   }
 
   .education {
-    padding: 18% 10%;
+    /* padding: 18% 10%; */
+    padding: 0;
   }
 
   .education-container {
@@ -697,8 +697,29 @@ span {
     text-align: center;
   }
 
+  .education-box .edu-head img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+  }
+
+  .education-box .edu-head .edu h1 {
+    font-size: 1.6rem;
+  }
+
+  .education-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 4%;
+  }
+
   .contact {
-    padding: 18% 10%;
+    /* padding: 18% 10%; */
+    padding: 4%;
   }
 }
 

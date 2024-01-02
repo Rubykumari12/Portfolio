@@ -9,7 +9,6 @@ const Header = () => {
           Portfolio
         </a>
 
-        {/* <i className="bx bx-menu" id="menu-icon"></i> */}
         <GiHamburgerMenu className="bx bx-menu" id="menu-icon" />
 
         <nav className="navbar">

@@ -26,11 +26,9 @@ const Home = () => {
               href="https://www.linkedin.com/in/ruby-kumari-g-70225029b/"
               target="display"
             >
-              {/* <i className="bx bxl-linkedin"></i> */}
               <GrLinkedinOption />
             </a>
             <a href="https://github.com/Rubykumari12" target="display">
-              {/* <i className="bx bxl-github"></i> */}
               <FaGithub />
             </a>
           </div>
@@ -52,15 +50,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* linking javascript  */}
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-      {/* scroll reveal */}
-      <script src="https://unpkg.com/scrollreveal"></script>
-
-      {/* typed js  */}
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     </div>
   );
 };
