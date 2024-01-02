@@ -1,10 +1,12 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaFile } from "react-icons/fa6";
 
 const Header = () => {
   return (
     <div>
       <header className="header">
+        <FaFile id="portfolio-icon" />
         <a href="#" className="logo">
           Portfolio
         </a>

@@ -1,8 +1,17 @@
 import React from "react";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa6";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+  const [text] = useTypewriter({
+    words: ["Frontend Developer.", "Web Developer.", "Programmer."],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 2000,
+  });
+
   return (
     <div>
       <section className="home" id="home">
@@ -10,7 +19,8 @@ const Home = () => {
           <h3>Hello, It's Me</h3>
           <h1>Ruby Kumari G</h1>
           <h3>
-            And I'm a <span className="multiple-text"></span>
+            And I'm a <span>{text}</span>
+            <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#0ef" />
           </h3>
           <p>
             I have completed Bachelor's of Computer Applications. Lorem ipsum
