@@ -1,8 +1,37 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+
+  //---------------------for-name-number-validation---------------
+  const handleNameInput = (e) => {
+    const validationMessage = document.getElementById("validationNameInput");
+    const regex = /^[A-Za-z\s]+$/;
+    if (e.target.value === "" || regex.test(e.target.value)) {
+      setName(e.target.value);
+      validationMessage.textContent = "";
+    } else {
+      validationMessage.textContent = "Only alphabets are allowed.";
+      e.preventDefault(); // Prevent the invalid character from being entered
+    }
+  };
+
+  const handleNumberInput = (e) => {
+    const validationMessage = document.getElementById("validationNumberInput");
+    const regex = /^[0-9\b]+$/;
+    if (e.target.value === "" || regex.test(e.target.value)) {
+      setNumber(e.target.value);
+      validationMessage.textContent = "";
+    } else {
+      validationMessage.textContent = "Only numbers are allowed.";
+      e.preventDefault(); // Prevent the invalid character from being entered
+    }
+  };
+  //-----------------------------------------------------------
+
   const message = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,7 +45,7 @@ const Contact = () => {
       .then(
         () => {
           e.target.reset();
-          // setName("");
+          setName("");
           toast.success("Your Message is sent successfully!");
         },
         (error) => {
@@ -34,7 +63,16 @@ const Contact = () => {
 
         <form action="#" ref={message} onSubmit={sendEmail}>
           <div className="input-box">
-            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              id="validationNameInput"
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              value={name}
+              onChange={handleNameInput}
+              maxLength={"30"}
+              required
+            />
             <input
               type="email"
               name="email"
@@ -44,9 +82,13 @@ const Contact = () => {
           </div>
           <div className="input-box">
             <input
-              type="number"
+              id="validationNumberInput"
+              type="text"
               name="number"
               placeholder="Mobile Number"
+              value={number}
+              onChange={handleNumberInput}
+              maxLength={"10"}
               required
             />
             <input
