@@ -54,14 +54,6 @@ section {
   font-size: 2.8rem;
 }
 
-.logo {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  font-weight: bold;
-  position: absolute;
-  padding-left: 4%;
-}
-
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -598,7 +590,7 @@ span {
     color: var(--text-color);
     font-weight: bold;
     position: absolute;
-    padding-left: 8%;
+    padding-left: 32px;
   }
 
   .btn {
