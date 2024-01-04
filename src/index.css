@@ -70,12 +70,22 @@ section {
   display: inline-block;
 }
 
+.navbarList {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+  display: inline-block;
+  list-style: none;
+  display: flex;
+}
+
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
 }
 
-#menu-icon {
+#list-icon {
   font-size: 3rem;
   color: var(--text-color);
   display: none;
@@ -550,7 +560,7 @@ span {
 
 @media (max-width: 991px) {
   .header {
-    padding: 2rem 3%;
+    padding: 2.3rem 3%;
   }
 
   section {
@@ -567,20 +577,44 @@ span {
 }
 
 @media (max-width: 768px) {
-  #menu-icon {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #list-icon {
     display: block;
+    cursor: pointer;
   }
 
   .navbar {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    right: 0;
+    margin-right: 5%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .navbarList {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    padding: 24px 33px;
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgb(57, 195, 223) 100%
+    );
+    box-shadow: 0 0 4px 0 var(--main-color);
+  }
+
+  #listOpen {
+    display: flex;
+    z-index: 1;
   }
 
   .navbar.active {
@@ -588,9 +622,8 @@ span {
   }
 
   .navbar a {
-    display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 0.25rem 0;
   }
 
   .logo {
@@ -670,8 +703,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    /* padding: 18% 10%; */
-    padding: 6% 4%;
+    padding: 15% 4% 6% 4%;
   }
 
   .skills p {
@@ -680,12 +712,11 @@ span {
   }
 
   .projects {
-    /* padding: 18% 10%; */
-    padding: 4%;
+    padding: 18% 4% 6% 4%;
   }
 
   .projects h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   .projects-container {
@@ -698,8 +729,7 @@ span {
   }
 
   .education {
-    /* padding: 18% 10%; */
-    padding: 0;
+    padding: 15% 0 4% 0;
   }
 
   .education-container {
@@ -728,12 +758,10 @@ span {
   .heading {
     text-align: center;
     font-size: 4.5rem;
-    padding: 4%;
   }
 
   .contact {
-    /* padding: 18% 10%; */
-    padding: 4%;
+    padding: 8%;
   }
 }
 

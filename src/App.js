@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
@@ -7,19 +8,21 @@ import Education from "./Education";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
