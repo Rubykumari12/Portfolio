@@ -582,11 +582,6 @@ span {
     align-items: flex-start;
   }
 
-  #list-icon {
-    display: block;
-    cursor: pointer;
-  }
-
   .navbar {
     position: absolute;
     right: 0;
@@ -597,6 +592,11 @@ span {
     z-index: 3;
   }
 
+  #list-icon {
+    display: block;
+    cursor: pointer;
+  }
+
   .navbarList {
     display: none;
     flex-direction: column;
@@ -604,6 +604,7 @@ span {
     gap: 13px;
     border-radius: 10px;
     padding: 24px 33px;
+    margin: 10%;
     background: linear-gradient(
       0deg,
       rgba(25, 55, 109, 0.2) 0%,
@@ -615,6 +616,8 @@ span {
   #listOpen {
     display: flex;
     z-index: 1;
+    position: absolute;
+    left: -300%;
   }
 
   .navbar.active {
