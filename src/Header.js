@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaFile } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Modal, modal } from "antd";
 
 const Header = () => {
   const [listOpen, setListOpen] = useState(false);
@@ -13,20 +16,25 @@ const Header = () => {
         </a>
 
         <div className="navbar">
-          <img
-            id="list-icon"
-            src={listOpen ? "/images/closeIcon.jpg" : "/images/listIcon.jpg"}
-            onClick={() => setListOpen(!listOpen)}
-          />
-          <ul
-            id="listOpen"
-            className={`${"navbarList"} ${listOpen && "listOpen"}`}
-            onClick={() => setListOpen(false)}
-          >
+          <div className="mobileIcon">
+            {listOpen && (
+              <RxCross2
+                onClick={() => setListOpen(!listOpen)}
+                size={"20px"}
+                style={{ color: "#fff", fontWeight: "bold" }}
+              />
+            )}
+            {!listOpen && (
+              <GiHamburgerMenu
+                onClick={() => setListOpen(!listOpen)}
+                size={"20px"}
+              />
+            )}
+          </div>
+
+          <ul className="navbarList">
             <li>
-              <a href="#home" className="active">
-                Home
-              </a>
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -46,6 +54,24 @@ const Header = () => {
           </ul>
         </div>
       </header>
+
+      <Modal
+        className="mobileList"
+        onCancel={() => setListOpen(!listOpen)}
+        open={listOpen}
+        footer={null}
+        closeIcon={false}
+        width={"100px"}
+      >
+        <div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </Modal>
     </div>
   );
 };
