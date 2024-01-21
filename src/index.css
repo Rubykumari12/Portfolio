@@ -29,9 +29,18 @@ body {
 }
 
 section {
-  min-height: 100vh;
   padding-left: 20px;
   height: fit-content;
+}
+
+section#home {
+  padding-top: 12%;
+  padding-bottom: 12%;
+}
+
+section#about {
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .header {
@@ -579,6 +588,15 @@ span {
 }
 
 @media (max-width: 768px) {
+  section#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 12%;
+  }
+
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -616,10 +634,6 @@ span {
     margin-bottom: 15px;
   }
 
-  .home {
-    flex-direction: column;
-  }
-
   .home-content h3 {
     font-size: 2.6rem;
   }
@@ -628,22 +642,13 @@ span {
     font-size: 5rem;
   }
 
-  .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    flex-direction: column;
-    padding-top: 100px;
-  }
-
   .home-img {
     order: 1;
   }
 
   .home-img .image {
-    width: 260px;
-    height: 260px;
+    width: 30rem;
+    height: 30rem;
   }
 
   .image img {
@@ -698,8 +703,8 @@ span {
 
   .image1 {
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     z-index: 1;
     overflow: hidden;
