@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaFile } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Modal, modal } from "antd";
+import { Modal } from "antd";
 
 const Header = () => {
   const [listOpen, setListOpen] = useState(false);
@@ -17,14 +17,13 @@ const Header = () => {
 
         <div className="navbar">
           <div className="mobileIcon">
-            {listOpen && (
+            {listOpen ? (
               <RxCross2
                 onClick={() => setListOpen(!listOpen)}
                 size={"20px"}
                 style={{ color: "#fff", fontWeight: "bold" }}
               />
-            )}
-            {!listOpen && (
+            ) : (
               <GiHamburgerMenu
                 onClick={() => setListOpen(!listOpen)}
                 size={"20px"}
@@ -56,20 +55,32 @@ const Header = () => {
       </header>
 
       <Modal
-        className="mobileList"
         onCancel={() => setListOpen(!listOpen)}
+        className="mobileList"
         open={listOpen}
         footer={null}
         closeIcon={false}
-        width={"100px"}
+        width={"110px"}
       >
         <div>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" onClick={() => setListOpen(!listOpen)}>
+            Home
+          </a>
+          <a href="#about" onClick={() => setListOpen(!listOpen)}>
+            About
+          </a>
+          <a href="#skills" onClick={() => setListOpen(!listOpen)}>
+            Skills
+          </a>
+          <a href="#projects" onClick={() => setListOpen(!listOpen)}>
+            Projects
+          </a>
+          <a href="#education" onClick={() => setListOpen(!listOpen)}>
+            Education
+          </a>
+          <a href="#contact" onClick={() => setListOpen(!listOpen)}>
+            Contact
+          </a>
         </div>
       </Modal>
     </div>

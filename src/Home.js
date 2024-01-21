@@ -23,13 +23,13 @@ const Home = () => {
             <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#0ef" />
           </h3>
           <p>
-            I have completed Bachelor's of Computer Applications. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Assumenda tempora
-            architecto tenetur vitae repellendus repudiandae molestias quod
-            labore exercitationem nam sequi, ea dolorem, ullam qui laborum
-            excepturi nobis nemo officiis beatae eveniet. Nisi beatae fuga, ex
-            molestiae soluta cumque? Dolore temporibus, ipsam iusto sint tenetur
-            perferendis.
+            Passionate web developer dedicated to crafting visually appealing
+            and user-friendly websites, utilizing a robust skill set in
+            front-end and back-end technologies to deliver seamless and engaging
+            online experiences. Enthusiastic about staying at the forefront of
+            industry trends, I continuously strive to enhance my skills,
+            incorporating the latest technologies and employing a meticulous eye
+            for detail.
           </p>
           <div className="social-media">
             <a
@@ -43,7 +43,7 @@ const Home = () => {
             </a>
           </div>
           <a
-            href="https://drive.google.com/file/d/1ABirb2cdP2YIOGdS5XyqPwCpNb5KEaXw/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1MXogHfExsvG2oznhjm3I2XTAHCsGuL1u/view?usp=drivesdk"
             target="display"
             className="btn"
           >

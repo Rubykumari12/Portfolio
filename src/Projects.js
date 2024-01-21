@@ -35,15 +35,15 @@ const Projects = () => {
             <div className="projects-layer">
               <h4>Black-Jack</h4>
               <p>
-                Elevate your timekeeping experience with our web project
-                dedicated to clocks and watches. Immerse yourself in a seamless
-                blend of design and functionality.
+                Dive into the thrill of our Blackjack Game website, where
+                strategy meets excitement. Experience the classic card game with
+                sleek design, engaging gameplay, and a chance to test your luck
+                against the dealer.
               </p>
               <a
                 href="https://github.com/Rubykumari12/Black-Jack"
                 target="display"
               >
-                {/* <i className="bx bx-link-external"></i> */}
                 <BiLinkExternal className="icon-link" />
               </a>
             </div>
@@ -59,8 +59,9 @@ const Projects = () => {
             <div className="projects-layer">
               <h4>Passenger-Counter</h4>
               <p>
-                Elevate your timekeeping experience with our web project
-                dedicated to clocks and watches.
+                This is a passenger counter app which can be used at different
+                transport stations to count number of passengers entered the
+                station.
               </p>
               <a
                 href="https://github.com/Rubykumari12/Passenger-Counter"
