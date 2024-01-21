@@ -594,7 +594,6 @@ span {
     align-items: center;
     gap: 5rem;
     flex-direction: column;
-    margin-top: 12%;
   }
 
   .header {
@@ -644,6 +643,7 @@ span {
 
   .home-img {
     order: 1;
+    margin-top: 16%;
   }
 
   .home-img .image {
