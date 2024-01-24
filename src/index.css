@@ -693,6 +693,7 @@ span {
   .home img {
     width: 30rem;
     height: 30rem;
+    object-fit: cover;
     margin-top: 16%;
     margin-bottom: 0;
   }
@@ -739,6 +740,7 @@ span {
     margin: 0;
     width: 30rem;
     height: 30rem;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 2rem var(--main-color);
   }
