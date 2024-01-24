@@ -58,7 +58,7 @@ const Home = () => {
           <div className="image">
             <img
               className="dp"
-              src="images/home2.jpg"
+              src="images/home.jpg"
               alt=""
               width="400"
               height="390"
