@@ -109,8 +109,8 @@ section#about {
   flex-direction: row;
 }
 
-.home-img .image,
-.image1 {
+.home img,
+.about img {
   /* width: 35vw; */
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -127,34 +127,16 @@ section#about {
   }
 }
 
-.home-img {
-  position: relative;
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 2rem;
-}
-
-.home-img .image {
+.home img {
   position: relative;
   width: 300px;
   height: 300px;
+  margin-bottom: 5rem;
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
   box-shadow: 0 0 2rem var(--main-color);
   transform: translateX(-50%);
-}
-
-.image img {
-  position: absolute;
-  top: 0.5px;
-  max-width: 336px;
-  max-height: 390px;
-  object-fit: cover;
-  left: -12%;
 }
 
 .home-content h1 {
@@ -251,32 +233,15 @@ span {
   background: var(--second-bg-color);
 }
 
-.about-img {
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5rem;
-}
-
-.image1 {
+.about img {
   position: relative;
   width: 300px;
   height: 300px;
+  margin-left: 5rem;
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
   box-shadow: 0 0 2rem var(--main-color);
-}
-
-.image1 img {
-  position: absolute;
-  top: 0.5px;
-  left: 42%;
-  transform: translateX(-50%);
-  max-width: 350px;
-  object-fit: cover;
 }
 
 .heading {
@@ -582,7 +547,7 @@ span {
 
   .home {
     flex-direction: column;
-    gap: 7rem;
+    margin-top: 10px;
   }
 
   .home-content {
@@ -592,7 +557,7 @@ span {
 
   .about {
     flex-direction: column;
-    gap: 7rem;
+    gap: 4rem;
   }
 
   .about-content h2 {
@@ -610,7 +575,7 @@ span {
   }
 
   .btn {
-    margin: 0;
+    margin-right: 2rem;
   }
 
   .skills p,
@@ -690,6 +655,7 @@ span {
   }
 
   .btn {
+    margin-right: 0;
     margin-bottom: 15px;
   }
 
@@ -724,21 +690,11 @@ span {
     font-size: 4rem;
   }
 
-  .home-img {
-    margin-top: 16%;
-  }
-
-  .home-img .image {
+  .home img {
     width: 30rem;
     height: 30rem;
-  }
-
-  .image img {
-    position: absolute;
-    top: 0.5px;
-    max-width: 300px;
-    object-fit: cover;
-    left: -17%;
+    margin-top: 16%;
+    margin-bottom: 0;
   }
 
   .home-content {
@@ -779,12 +735,8 @@ span {
     margin: 0;
   }
 
-  .about-img {
-    padding: 0;
+  .about img {
     margin: 0;
-  }
-
-  .image1 {
     width: 30rem;
     height: 30rem;
     border-radius: 50%;

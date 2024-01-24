@@ -4,11 +4,7 @@ const About = () => {
   return (
     <div>
       <section className="about" id="about">
-        <div className="about-img">
-          <div className="image1">
-            <img src="images/home2.jpg" alt="" width="400" height="390" />
-          </div>
-        </div>
+        <img src="images/home2.jpg" alt="" width="400" height="390" />
 
         <div className="about-content">
           <h2 className="heading">

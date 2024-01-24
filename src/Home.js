@@ -54,17 +54,13 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="home-img">
-          <div className="image">
-            <img
-              className="dp"
-              src="images/home.jpg"
-              alt=""
-              width="400"
-              height="390"
-            />
-          </div>
-        </div>
+        <img
+          className="dp"
+          src="images/home.jpg"
+          alt=""
+          width="400"
+          height="390"
+        />
       </section>
     </div>
   );
